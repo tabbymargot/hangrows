@@ -234,9 +234,9 @@ add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 add_action( 'get_header', 'remove_primary_sidebar_selected_pages' );
 
 function remove_primary_sidebar_selected_pages() {
-	if ( is_page_template( 'page_no_sidebar.php' || 'page_scrapbook.php' ) ) {
+	if ( is_page_template( array( 'page_no_sidebar.php', 'page_scrapbook.php' ) ) ) {
 	remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
-	}
+}
 }
 
 //* Remove 'Blog' heading from blogroll page 
