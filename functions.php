@@ -224,7 +224,7 @@ function foodie_pro_footer_creds_text( $creds ) {
 
 function wpb_add_google_fonts() {
 
-	wp_enqueue_style( 'wpb-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Montserrat:400,700|Patua+One:400', false ); 
+	wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600|Montserrat:400,700|Patua+One:400', false ); 
 	}
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
