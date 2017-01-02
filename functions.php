@@ -234,7 +234,7 @@ add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 add_action( 'get_header', 'remove_primary_sidebar_selected_pages' );
 
 function remove_primary_sidebar_selected_pages() {
-	if ( is_page_template( array( 'page_no_sidebar.php', 'page_scrapbook.php' ) ) ) {
+	if ( is_page_template( array( 'page_no_sidebar.php', 'page_scrapbook.php') ) ) {
 	remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 }
 }
@@ -356,15 +356,8 @@ function sp_read_more_link() {
 	return '... <a class="more-link" href="' . get_permalink() . '">View Post &raquo;</a>';
 }
 
-//Add CSS style to next_posts_link() and previous_posts_link() - see http://bit.ly/2fmCUkZ
 
 
-//    add_filter('next_posts_link_attributes', 'posts_link_attributes');
-//    add_filter('previous_posts_link_attributes', 'posts_link_attributes');
-//
-//  
-//
-//    function posts_link_attributes() {
-//        return 'class="more-link"';
-//    }
+
+
     

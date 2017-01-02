@@ -29,7 +29,7 @@ $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $args = array(
     'post_type' => 'scrapbook',
     'posts_per_page'      => 9,
-    'paged'          => $paged //this needs to be included to get pagination to work with WP_Query. See Adding the "paged" parameter to a query, section: "Adding the "paged" parameter to a query"
+    'paged'          => $paged //this needs to be included to get pagination to work with WP_Query. See https://codex.wordpress.org/Pagination , section: "Adding the "paged" parameter to a query"
   );
   $query = new WP_Query( $args );
 
